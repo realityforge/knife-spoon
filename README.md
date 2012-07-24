@@ -13,8 +13,8 @@ specified if the user wants to learn which files the command thinks have been mo
 Example Output:
 ---------------
 
-<pre>
-<span style="color:green; font-weight:bold">OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>: Safe to upload 'windows' as cookbook has new version.
-<span style="color:yellow; font-weight:bold">WARNING</span>: Unsafe to upload 'glassfish' as it modifies an existing cookbook..
-<span style="color:red; font-weight:bold">ERROR&nbsp;&nbsp;</span>: Dangerous to upload 'fisg' as it modifies a frozen cookbook.
-</pre>
+<div style="font-family: monospace; background-color:black; color:white">
+<span style="color:green; font-weight:bold">OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>: Safe to upload 'windows' as cookbook has new version.<br/>
+<span style="color:yellow; font-weight:bold">WARNING</span>: Unsafe to upload 'glassfish' as it modifies an existing cookbook.<br/>
+<span style="color:red; font-weight:bold">ERROR&nbsp;&nbsp;</span>: Dangerous to upload 'fisg' as it modifies a frozen cookbook.<br/>
+</div>
