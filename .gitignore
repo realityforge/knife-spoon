@@ -1,0 +1,7 @@
+# Ignore IDEA project files
+/*.iml
+/*.ipr
+/*.iws
+
+# Ignore the patch file generated when integrating changes
+/patch.*
