@@ -30,7 +30,7 @@ module KnifeSpoon
       end
 
       cookbooks = ::Chef::CookbookLoader.new(cookbook_path)
-      cookbooks = cookbooks.select { |c| name_args.include?(c.name) } unless name_args.empty?
+      cookbooks = cookbooks.select { |c| name_args.include?(c[0].inspect) } unless name_args.empty?
 
       cookbooks.each do |cookbook|
         local_version = ::Chef::CookbookLoader.new(cookbook_path)[cookbook].version
