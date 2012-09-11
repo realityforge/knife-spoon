@@ -11,7 +11,7 @@ module KnifeSpoon
       require 'chef/cookbook_version'
       require 'pathname'
     end
-    banner "knife status check"
+    banner "knife spoon status"
 
     option :show,
            :short => "-s",
