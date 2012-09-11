@@ -8,6 +8,7 @@ module KnifeSpoon
     deps do
       require 'chef/json_compat'
       require 'uri'
+      require 'chef/checksum_cache'
       require 'chef/cookbook_version'
       require 'pathname'
     end
