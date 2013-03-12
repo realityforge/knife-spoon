@@ -8,7 +8,6 @@ module KnifeSpoon
     deps do
       require 'chef/json_compat'
       require 'uri'
-      require 'chef/checksum_cache'
       require 'chef/cookbook_version'
       require 'pathname'
     end
@@ -30,6 +29,7 @@ module KnifeSpoon
       end
 
       cookbooks = ::Chef::CookbookLoader.new(cookbook_path)
+      cookbooks.load_cookbooks
       cookbooks = cookbooks.select { |c| name_args.include?(c[0].inspect) } unless name_args.empty?
 
       cookbooks.each do |cookbook|
